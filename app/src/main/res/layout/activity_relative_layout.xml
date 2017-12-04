@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context="com.example.nguonchhay.ruppandroidclass.RelativeLayoutActivity">
+
+    <EditText
+        android:id="@+id/editReminderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Reminder name"
+        />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Date"
+        android:layout_below="@+id/editReminderName"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/editTime"
+        />
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="Time"
+        android:layout_below="@+id/editReminderName"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_below="@+id/editTime"
+        android:layout_alignParentRight="true"
+        />
+
+
+</RelativeLayout>

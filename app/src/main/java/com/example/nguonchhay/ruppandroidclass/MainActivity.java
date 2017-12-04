@@ -28,6 +28,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, MAIN_ACTIVITY_CODE);
             }
         });
+
+        Button btnLinearLayout = (Button) findViewById(R.id.btnLinearLayout);
+        btnLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, LinearLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnRelativeLayout = (Button) findViewById(R.id.btnRelativeLayout);
+        btnRelativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RelativeLayoutActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
