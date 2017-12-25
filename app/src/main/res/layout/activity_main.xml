@@ -37,4 +37,10 @@
         android:layout_height="wrap_content"
         android:text="Relative Layout" />
 
+    <Button
+        android:id="@+id/btnFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment Demo" />
+
 </LinearLayout>
